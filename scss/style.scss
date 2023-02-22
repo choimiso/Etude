@@ -1,0 +1,712 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* { margin: 0; padding: 0; }
+a { text-decoration: none;  color: inherit; }
+li { list-style: none; }
+body {font-family: sans-serif; background:inherit;}
+
+div#wrap{
+  width: 100%; 
+  div.header{
+    width: 100%; height: 100%; position: relative;
+    div.inner{
+      width: 1320px; height: 100px; margin: 0 auto; display: flex;
+      background-color: #ececec;
+      img{
+        width: 160px; height: 50px; margin: 20px 50px; padding: 0 20px; box-sizing: border-box; 
+      }
+      ul.menu{
+        width: 1320px; height: 50px; margin-top: 40px; margin-left: 40px; justify-content: center; display: flex; color: #444; 
+        // position: fiex; top: 0; z-index: 10;
+        li{
+          width: 130px; height: 30px; line-height: 30px; margin: 5px; text-align: center; font-size: 15px; font-weight: 600;
+          &:hover{
+            color: rgb(241, 87, 159);
+          }
+          ul.submenu-1{
+            width: 130px; height: 185px; top: 0; left: 0; align-items: center; justify-content: center; 
+            display: none;
+            background-color: #eee; color: #444; 
+            li{
+              width: 120px; height: 30px; margin-top: 18px; text-align: center;
+              &:hover{
+                color: rgb(241, 87, 159);
+              }
+            }
+          }
+          ul.submenu-2{
+            width: 130px; height: 135px; top: 0; left: 0; align-items: center; justify-content: center; color: #444; 
+            display: none;
+            background-color: #eee;
+            li{
+              width: 120px; height: 30px; margin-top: 18px; text-align: center; 
+              &:hover{
+                color: rgb(241, 87, 159);
+              }
+            }
+          }
+          ul.submenu-3{
+            width: 130px; height: 85px; top: 0; left: 0; align-items: center; justify-content: center; color: #444; 
+            background-color: #eee;
+            display: none;
+            li{
+              width: 120px; height: 30px; margin-top: 18px; text-align: center; 
+              &:hover{
+                color: rgb(241, 87, 159); 
+              }
+            }
+          }
+          ul.submenu-4{
+            width: 130px; height: 85px; top: 0; left: 0; align-items: center; justify-content: center; color: #444; 
+            display: none;
+            background-color: #eee;
+            li{
+              width: 120px; height: 30px; margin-top: 18px; text-align: center; 
+              &:hover{
+                color: rgb(253, 128, 222);
+              }
+            }
+          }
+        }
+      }
+      div.icon{
+        width: 200px; margin-top: 40px; margin-left: 100px; padding: 5px 0;
+        i{
+          width: 50px; height: 50px; text-align: center; font-size: 25px; font-weight: 600; 
+        }
+      }
+    }
+  }
+  div#container{
+    width: 100%;
+    div.inner{
+      width: 100%; height: 100%; position: relative;
+      div.swiper{
+        width: 1320px; height: 100%; cursor: pointer;
+      }
+      div.swiper-slide{
+        background: #fff; display: flex; justify-content: center; align-items: center;
+        img{
+          width: 1320px; height: 780px; display: block; object-fit: cover;
+        }
+        h1{
+          width: 480px; position: absolute; top: 0; left: 80px; margin-top: 580px; font-size: 36px; animation: 2s anim-lineUp;
+          span{
+            width: 400px; display: block; position: absolute; font-size: 16px; font-weight: 500; margin-top: 10px; margin-left: 3px;
+          } 
+        }
+      }  
+    }
+    div.contents{
+      width: 100%; height: 100%; 
+      div.inner{
+        width: 100%; height: 100%; position: relative; 
+        div.pay{
+          width: 1320px; height: 450px;  margin: 0 auto; display: flex; background: url(../img/bg\ color.jpg) no-repeat; cursor: pointer;
+          div.tint{
+            width: 1320px; height: 300px; margin-top: 60px;
+            img{
+              width: 250px; height: 250px; margin-bottom: 20px;     
+            }
+            p{
+              width: 250px; height: 20px; text-align: center; font-size: 16px; font-weight: 600; margin-bottom: 20px;
+            }
+            span{
+              width: 250px; height: 20px; text-align: center; font-size: 16px; font-weight: 600; display: block;
+            } 
+          }
+          div.eye{
+            width: 1320px; height: 300px;     margin-top: 60px; 
+            img{
+              width: 250px; height: 250px; margin-bottom: 20px;
+            }
+            p{
+              width: 250px; height: 20px; text-align: center; font-size: 16px; font-weight: 600; margin-bottom: 20px;
+            }
+            span{
+              width: 250px; height: 20px; text-align: center; font-size: 16px; font-weight: 600; display: block;
+            } 
+          }
+          div.face{
+            width: 1320px; height: 300px; margin-top: 60px; 
+            img{
+              width: 250px; height: 250px; margin-bottom: 20px;  
+            }
+            p{
+              width: 250px; height: 20px; text-align: center; font-size: 16px; font-weight: 600; margin-bottom: 20px;
+            }
+            span{
+              width: 250px; height: 20px; text-align: center; font-size: 16px; font-weight: 600; display: block;
+            } 
+          }
+          div.shdow{
+            width: 1320px; height: 300px; margin-top: 60px; 
+            img{
+              width: 250px; height: 250px; margin-bottom: 20px;    
+            }
+            p{
+              width: 250px; height: 20px; text-align: center; font-size: 16px; font-weight: 600; margin-bottom: 20px;
+            }
+            span{
+              width: 250px; height: 20px; text-align: center; font-size: 16px; font-weight: 600; display: block;
+            } 
+          }
+          div.cul{
+            width: 1320px; height: 300px; margin-top: 60px; 
+            img{
+              width: 250px; height: 250px; margin-bottom: 20px;    
+            }
+            p{
+              width: 250px; height: 20px; text-align: center; font-size: 16px; font-weight: 600; margin-bottom: 20px;
+            }
+            span{
+              width: 250px; height: 20px; text-align: center; font-size: 16px; font-weight: 600; display: block;
+            } 
+          }
+        }
+      }
+    }
+    div.main{
+      width: 100%; height: 100%; 
+      div.inner{
+        width: 1320px; height: 980px; margin: 0 auto; background: url(../img/img_mackup_bg.jpg) no-repeat; 
+        div.box{
+          width: 500px; height: 300px; text-align: center; margin-top: 50px; margin: 0 auto; margin-top: 40px; 
+          img{
+            margin-top: 8px;
+          }
+          h2{
+            margin-bottom: 15px;
+            font-size: 36px;
+          }
+          span{
+            margin-bottom: 20px;
+            font-size: 15px;  display: block;
+          }
+          button{
+            width: 150px; height: 50px; font-size: 20px;  font-weight: 700; background-color: #3d3a3a; color: #fff; border-radius: 10px;  cursor: pointer; opacity: 1;
+            &:hover{
+              background-color: #000000; transition: 1s; opacity: .5;
+            }
+          }
+        }
+        img.look{
+          width: 500px; height: 610px; margin-top: 40px; align-items: center; margin-left: 410px; cursor: pointer;
+        }
+        img.text{
+          width: 1280px; margin-left: 30px; margin-top: 35px;
+        }
+      }
+    }
+    div.BTS{
+      width: 1320px; height: 700px; margin: 0 auto;
+      div.inner{
+        width: 1300px; height: 550px; margin-left: 50px;
+        img.prd01{
+          width: 590px; height: 400px; margin-top: 200px; border: 2px solid #444; 
+          &:hover{
+            transform: scale(1.02); cursor: pointer;
+          }
+        }
+        img.prd02{
+          width: 590px; height: 400px; margin-top: 200px; margin-left: 30px; border: 2px solid #444;
+          &:hover{
+            transform: scale(1.02); cursor: pointer;
+          }
+        }
+      }
+    }
+    div.SoonJung{
+      width: 100%; height: 100%; 
+      div.inner{
+        width: 1320px; height: 1180px; margin: 0 auto; 
+        div.box{
+          width: 500px; height: 300px; text-align: center; margin-top: 50px; margin: 0 auto; margin-top: 40px; 
+          img{
+            margin-top: 8px;
+          }
+          h2{
+            margin-bottom: 20px;
+            font-size: 36px;
+          }
+          span{
+            margin-bottom: 30px;
+            font-size: 15px;  display: block;
+          }
+          button{
+            width: 150px; height: 50px; font-size: 20px;  font-weight: 700; background-color: #3d3a3a; color: #fff; border-radius: 10px;  cursor: pointer; opacity: 1;
+            &:hover{
+              background-color: #000000; transition: 1s; opacity: .5;
+            }
+          }
+        }
+        img.main_play{
+          width: 650px; height: 800px; margin-top: 30px; border-radius: 10px;
+        }
+        div.play_img{
+          width: 650px; height: 800px; float: right; margin-top: 30px; 
+          div.clip01{
+            width: 650px; height: 400px; display: flex;
+            div.text01{
+              width: 320px; height: 395px;  background-color: #ececec; border-radius: 10px;transition: 5s;
+              img.sj0101{
+              width: 320px; height: 290px; border-radius: 10px; 
+              &:hover{
+                content: url(../img/soonjung_0102.jpg); transform: scale(1.02); width: 320px; height: 290px; overflow: hidden; transition: 0.5s; 
+              }
+              }
+              div.textbox01{
+                width: 310px; height: 110px;
+                span{
+                  width: 200px; height: 15px; display: block; font-size: 14px; color: #999; margin-left: 20px; margin-top: 3px;
+                }
+                h4{
+                  width: 290px; height: 50px; margin-top: 3px; font-size: 17px; margin-left: 20px;
+                }
+                p{
+                  width: 150px; height: 15px; display: block; font-size: 17px; font-weight: 600; color: #ff5b5b; margin-left: 20px; 
+                }  
+              }
+            }
+            div.text02{
+              width: 320px; height: 395px; background-color: #ececec; margin-left: 10px; border-radius: 10px;
+              img.sj0201{
+              width: 320px; height: 290px; border-radius: 10px;
+              &:hover{
+                content: url(../img/soonjung_0202.jpg); transform: scale(1.02); width: 320px; height: 290px; overflow: hidden; transition: 0.5s; 
+              }
+              }
+              div.textbox02{
+                width: 310px; height: 110px; 
+                span{
+                  width: 200px; height: 15px; display: block; font-size: 14px; color: #999; margin-left: 20px; margin-top: 3px;
+                }
+                h4{
+                  width: 290px; height: 50px; margin-top: 3px; font-size: 17px; margin: 0 20px;
+                }
+                p{
+                  width: 150px; height: 15px; display: block; font-size: 17px; font-weight: 600; color: #ff5b5b; margin-left: 20px;
+                }  
+              }
+            }
+          }
+          div.clip02{
+            width: 650px; height: 400px; margin-top: 5px; display: flex;
+            div.text01{
+              width: 320px; height: 395px;  background-color: #ececec; border-radius: 10px;transition: 5s;
+              img.sj0301{
+              width: 320px; height: 290px; border-radius: 10px; 
+              &:hover{
+                content: url(../img/soonjung_0302.jpg); transform: scale(1.02); width: 320px; height: 290px; overflow: hidden; transition: 0.5s; 
+              }
+              }
+              div.textbox01{
+                width: 310px; height: 110px;
+                span{
+                  width: 200px; height: 15px; display: block; font-size: 14px; color: #999; margin-left: 20px; margin-top: 3px;
+                }
+                h4{
+                  width: 290px; height: 50px; margin-top: 3px; font-size: 17px; margin-left: 20px;
+                }
+                p{
+                  width: 150px; height: 15px; display: block; font-size: 17px; font-weight: 600; color: #ff5b5b; margin-left: 20px;
+                }  
+              }
+            }
+            div.text02{
+              width: 320px; height: 395px;  background-color: #ececec; margin-left: 10px; border-radius: 10px;
+              img.sj0401{
+              width: 320px; height: 290px; border-radius: 10px;
+              &:hover{
+                content: url(../img/soonjung_0402.jpg); transform: scale(1.02); width: 320px; height: 290px; overflow: hidden; transition: 0.5s; 
+              }
+              }
+              div.textbox02{
+                width: 310px; height: 110px; 
+                span{
+                  width: 200px; height: 15px; display: block; font-size: 14px; color: #999; margin-left: 20px; margin-top: 3px;
+                }
+                h4{
+                  width: 290px; height: 50px; margin-top: 3px; font-size: 17px; margin: 0 20px;
+                }
+                p{
+                  width: 150px; height: 15px; display: block; font-size: 17px; font-weight: 600; color: #ff5b5b; margin-left: 20px; 
+                }  
+              }
+            }
+          }
+        }
+      }
+    }
+    div.forgift{
+      width: 100%; height: 100%; 
+      div.inner{
+        width: 1320px; height: 680px; margin: 0 auto;
+        div.gift_box{
+          width: 500px; height: 300px; text-align: center; margin-top: 50px; margin: 0 auto; margin-top: 40px; 
+          img{
+            margin-top: 8px;
+          }
+          h2{
+            margin-bottom: 20px;
+            font-size: 36px;
+          }
+          span{
+            margin-bottom: 30px;
+            font-size: 15px;  display: block;
+          }
+          button{
+            width: 150px; height: 50px; font-size: 20px;  font-weight: 700; background-color: #3d3a3a; color: #fff; border-radius: 10px;  cursor: pointer; opacity: 1;          
+            &:hover{
+              background-color: #000000; transition: 1s; opacity: .5;
+            }
+          }
+        }
+        div.gift_img{
+          width: 1300px; height: 500px; 
+          img{
+            width: 300px; height: 300px; margin-left: 15px; 
+            &:hover{
+              transform: scale(1.02); transition: 0.5s; cursor: pointer;
+            }
+          }
+          img:nth-child(1){
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+    div.new{
+      width: 100%; height: 100%; 
+      div.inner{
+        width: 1320px; height: 920px; margin: 0 auto;
+        background: url(../img/whatsnew-bg.jpg);
+        div.new_box{
+          width: 500px; height: 200px; text-align: center; margin-top: 50px; margin: 0 auto; 
+          img{
+            margin-top: 90px;
+          }
+          h2{
+            margin-bottom: 30px;
+            font-size: 36px;
+          }
+          span{
+            margin-bottom: 30px;
+            font-size: 15px;  display: block;
+          }
+          button{
+            width: 150px; height: 50px; font-size: 20px;  font-weight: 700; background-color: #3d3a3a; color: #fff; border-radius: 10px;  cursor: pointer; opacity: 1;
+            &:hover{
+              background-color: #000000; transition: 1s; opacity: .5;
+            }
+          }
+        }
+        swiper-container.mySwiper{
+          width: 100%; height: 500px; margin: 0 auto; margin-top: 200px;
+        }
+        swiper-slide{
+          display: flex; justify-content: center; align-items: center;
+          div.box1{
+            width: 300px; height: 410px;  background-color: #ececec; border-radius: 10px; transition: 5s;
+            img{
+              display: block; width: 100%;  height: 300px; object-fit: cover; border-radius: 10px;
+              &:hover{
+                content: url(../img/new0102.jpg); width: 100%; height: 300px; transform: scale(1.02); overflow: hidden; transition: 0.5s; 
+              }
+            }
+            div.textbox01{
+              width: 100%; height: 110px;
+              span{
+                width: 200px; height: 15px; display: block; color: #999; margin-left: 20px; margin-top: 5px; font-size: 12px;
+              }
+              h5{
+                width: 250px; height: 30px; margin-top: 5px; font-size: 14px; margin-left: 20px;
+              }
+              div.color01{
+                width: 50px; height: 20px; display: flex; margin-left: 20px;
+                img{
+                  width: 15px; height: 15px; margin-right: 1px; margin-top: 3px; border-radius: 10px;
+                }
+              }
+              p{
+                width: 150px; height: 15px; display: block; font-size: 17px; font-weight: 600; color: #ff5b5b; margin-left: 20px; margin-top: 3px;
+              }  
+            }
+          }
+        }      
+        swiper-slide{
+          display: flex; justify-content: center; align-items: center;
+          div.box2{
+            width: 300px; height: 410px;  background-color: #ececec; border-radius: 10px; transition: 5s;
+            img{
+              display: block; width: 100%;  height: 300px; object-fit: cover; border-radius: 10px;
+              &:hover{
+                content: url(../img/new0202.jpg); width: 100%; height: 300px; transform: scale(1.02); overflow: hidden; transition: 0.5s; 
+              }
+            }
+            div.textbox02{
+              width: 100%; height: 110px;
+              span{
+                width: 200px; height: 15px; display: block; color: #999; margin-left: 20px; margin-top: 5px; font-size: 12px;
+              }
+              h5{
+                width: 250px; height: 30px; margin-top: 5px; font-size: 14px; margin-left: 20px;
+              }
+              p{
+                width: 150px; height: 15px; display: block; font-size: 17px; font-weight: 600; color: #ff5b5b; margin-left: 20px; margin-top: 25px;
+              }  
+            }
+          }
+        }      
+        swiper-slide{
+          display: flex; justify-content: center; align-items: center;
+          div.box3{
+            width: 300px; height: 410px;  background-color: #ececec; border-radius: 10px; transition: 5s;
+            img{
+              display: block; width: 100%;  height: 300px; object-fit: cover; border-radius: 10px;
+              &:hover{
+                content: url(../img/new0202.jpg); width: 100%; height: 300px; transform: scale(1.02); overflow: hidden; transition: 0.5s; 
+              }
+            }
+            div.textbox03{
+              width: 100%; height: 110px;
+              span{
+                width: 200px; height: 15px; display: block; color: #999; margin-left: 20px; margin-top: 5px; font-size: 12px;
+              }
+              h5{
+                width: 250px; height: 30px; margin-top: 5px; font-size: 14px;  margin-left: 20px;
+              }
+              p{
+                width: 150px; height: 15px; display: block; font-size: 17px; font-weight: 600; color: #ff5b5b; margin-left: 20px; margin-top: 25px;
+              }  
+            }
+          }
+        }   
+        swiper-slide{
+          display: flex; justify-content: center; align-items: center;
+          div.box4{
+            width: 300px; height: 410px;  background-color: #ececec; border-radius: 10px; transition: 5s;
+            img{
+              display: block; width: 100%;  height: 300px; object-fit: cover; border-radius: 10px;
+              &:hover{
+                content: url(../img/new0202.jpg); width: 100%; height: 300px; transform: scale(1.02); overflow: hidden; transition: 0.5s; 
+              }
+            }
+            div.textbox04{
+              width: 100%; height: 110px;
+              span{
+                width: 200px; height: 15px; display: block; color: #999; margin-left: 20px; margin-top: 5px; font-size: 12px;
+              }
+              h5{
+                width: 250px; height: 30px; margin-top: 5px; font-size: 14px;  margin-left: 20px;
+              }
+              div.color02{
+                width: 50px; height: 20px; display: flex; margin-left: 20px;
+                img{
+                  width: 15px; height: 15px; margin-right: 1px; margin-top: 3px; border-radius: 10px;
+                }
+              }
+              p{
+                width: 150px; height: 15px; display: block; font-size: 17px; font-weight: 600; color: #ff5b5b; margin-left: 20px; margin-top: 3px;
+              }  
+            }
+          }
+        }  
+        swiper-slide{
+          display: flex; justify-content: center; align-items: center;
+          div.box5{
+            width: 300px; height: 410px;  background-color: #ececec; border-radius: 10px; transition: 5s;
+            img{
+              display: block; width: 100%;  height: 300px; object-fit: cover; border-radius: 10px;
+              &:hover{
+                content: url(../img/new0502.jpg); width: 100%; height: 300px; transform: scale(1.02); overflow: hidden; transition: 0.5s; 
+              }
+            }
+            div.textbox05{
+              width: 100%; height: 110px;
+              span{
+                width: 200px; height: 15px; display: block; color: #999; margin-left: 20px; margin-top: 5px; font-size: 12px;
+              }
+              h5{
+                width: 250px; height: 30px; margin-top: 5px; font-size: 14px;  margin-left: 20px;
+              }
+              div.color03{
+                width: 50px; height: 20px; display: flex; margin-left: 20px;
+                img{
+                  width: 15px; height: 15px; margin-right: 1px; margin-top: 3px; border-radius: 10px;
+                }
+              }
+              p{
+                width: 150px; height: 15px; display: block; font-size: 17px; font-weight: 600; color: #ff5b5b; margin-left: 20px; margin-top: 3px;
+              }  
+            }
+          }
+        }  
+        swiper-slide{
+          display: flex; justify-content: center; align-items: center;
+          div.box6{
+            width: 300px; height: 410px;  background-color: #ececec; border-radius: 10px; transition: 5s;
+            img{
+              display: block; width: 100%;  height: 300px; object-fit: cover; border-radius: 10px;
+              &:hover{
+                content: url(../img/new0602.jpg); width: 100%; height: 300px; transform: scale(1.02); overflow: hidden; transition: 0.5s; 
+              }
+            }
+            div.textbox06{
+              width: 100%; height: 110px;
+              span{
+                width: 200px; height: 15px; display: block; color: #999; margin-left: 20px; margin-top: 5px; font-size: 12px;
+              }
+              h5{
+                width: 250px; height: 30px; margin-top: 5px; font-size: 14px;  margin-left: 20px;
+              }
+              p{
+                width: 150px; height: 15px; display: block; font-size: 17px; font-weight: 600; color: #ff5b5b; margin-left: 20px; margin-top: 25px;
+              }  
+            }
+          }
+        }   
+      }
+    }
+    div.event{
+      width: 100%; height: 880px;
+      div.inner{
+        width: 1320px; margin: 0 auto; 
+        div.event_box{
+          width: 500px; height: 200px; margin: 0 auto;  text-align: center;  
+          img{
+            margin-top: 90px;
+          }
+          h2{
+            margin-top: 20px; margin-bottom: 30px;
+            font-size: 36px;
+          }
+          button{
+            width: 150px; height: 50px; font-size: 20px;  font-weight: 700; background-color: #3d3a3a; color: #fff; border-radius: 10px;  cursor: pointer; opacity: 1;
+            &:hover{
+              background-color: #000000; transition: 1s; opacity: .5;
+            }
+          }
+        }
+        div.event_Swiper{
+          width: 100%; height: 410px; margin: 0 auto;
+          swiper-container.Swiper{
+            width: 1320px; height: 400px; margin-top: 150px; 
+            swiper-slide{
+              display: flex; justify-content: center; align-items: center; 
+              div.imgbox{
+                width: 600px; height: 400px; position: relative;
+                img {
+                  width: 560px; height: 350px; display: block; align-items:  center; position: absolute; margin: 0 20px; 
+                }
+                h2{
+                  width: 300px; height: 50px;  position: absolute; margin : 300px 0 0 60px; color: #444;
+                }
+              }
+            }  
+          }      
+        }
+      }
+    }
+  }  
+}
+
+
+div#footer_wrap{
+  width: 100%; height: 275px; 
+  footer{
+    width: 1320px; height: 100%; margin: 0 auto; position: relative;
+    background-color: #efefef;
+    div.contents{
+      width: 100%; height: 200px; 
+      div.foot_menu{
+        width: 100%;  margin-left: 15px;
+        ul{
+          width: 100%; height: 100%; display: flex; 
+          li{
+            font-size: 14px; font-weight: 500; color: #555; margin-top: 20px;
+            a{
+              margin-left: 13px; 
+              span{
+                margin-left: 13px; margin-top: 18px;
+              }
+            }
+          }
+          li.first{
+            font-size: 14px; font-weight: 800; color: #222; margin-top: 20px;
+          }
+        }
+      }
+      div.foot_copy{
+        width: 100%; height: 80px;  margin-top: 25px;
+        ul{
+          width: 100%;  margin-left: 30px;
+          li{
+            width: 100%;  display: flex; 
+            font-size: 14px; font-weight: 800; color: #222; 
+            ul.infor{
+              width: 500px; 
+              li{
+                width: 100%; font-size: 12px; font-weight: 500; color: #555;
+              }
+            }
+          }
+        }
+      }
+      div.contact_box{
+        width: 100%; height: 80px; margin-top: 10px;
+        ul{
+          width: 100%;  margin-left: 30px; 
+          li{
+            width: 100%;  display: flex; 
+            font-size: 14px; font-weight: 800; color: #222; 
+            ul.contact{
+              width: 500px; 
+              li{
+                width: 100%; font-size: 12px; font-weight: 500; color: 555; margin-left: 10px;
+              }
+            }
+          }
+        } 
+      }
+      div.foot_company{
+        width: 400px; height: 15px; margin-left: 20px; display: flex;
+        span{
+          display: block; width: 100%;  font-size: 12px; font-weight: 500; color: #555; margin-left: 10px;
+        }
+      }
+      div.foot_family{
+        width: 200px;
+        select{
+          height: 30px;   display: block; position: absolute; top: 20px; right: 20px;
+          option{
+            display: block;
+          } 
+          option.family{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
